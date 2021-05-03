@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarTheme"
+        android:title="@string/app_name"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions_main"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/manualDialButton"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Button
+        android:id="@+id/manualDialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manual_dial"
+        android:onClick="manualDial"
+        android:textSize="24sp"
+        android:drawableLeft="@drawable/ic_dial_pad"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        app:layout_constraintBottom_toTopOf="@id/pickContactButton"
+        app:layout_constraintTop_toBottomOf="@id/instructionTextView" />
+
+    <Button
+        android:id="@+id/pickContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_contact"
+        android:onClick="pick_contact"
+        android:textSize="24sp"
+        android:drawableLeft="@drawable/ic_contacts"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        app:layout_constraintBottom_toTopOf="@id/pickHistoryButton"
+        app:layout_constraintTop_toBottomOf="@id/manualDialButton" />
+
+    <Button
+        android:id="@+id/pickHistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_history"
+        android:onClick="pick_history"
+        android:textSize="24sp"
+        android:drawableLeft="@drawable/ic_call_log"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pickContactButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

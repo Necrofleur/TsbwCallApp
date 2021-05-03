@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TSBW Call</string>
+    <string name="instructions_main">Wie wollen Sie wählen?</string>
+    <string name="instructions_manual">Bitte die gewünschte Nummer eingeben und mit dem Knopf „Anrufen“ bestätigen.</string>
+    <string name="manual_dial">Nummer eingeben</string>
+    <string name="pick_contact">Aus Kontakten</string>
+    <string name="pick_history">Aus Letzten</string>
+    <string name="make_call">Anrufen</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="incoming_call">Eingehend</string>
+    <string name="outgoing_call">Ausgehend</string>
+    <string name="missed_call">Verpasst</string>
+    <string name="rejected_call">Abgelehnt</string>
+</resources>
